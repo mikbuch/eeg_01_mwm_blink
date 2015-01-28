@@ -282,9 +282,9 @@ for i in range(len(eeg_microvolts)):
 #     PLOTTING DATA                                            #
 ################################################################
 
-plt.plot(eeg_microvolts, color='b')
-plt.plot(stimulus, color='k',linewidth=2.0)
-plt.plot(blink_categorization, color='r',linewidth=1.0)
-plt.xlabel('sample number (512 samples per second)')
-plt.ylabel('amplitude (micro Volts)')
-plt.show()
+# plt.plot(eeg_microvolts, color='b')
+# plt.plot(stimulus, color='k',linewidth=2.0)
+# plt.plot(blink_categorization, color='r',linewidth=1.0)
+# plt.xlabel('sample number (512 samples per second)')
+# plt.ylabel('amplitude (micro Volts)')
+# plt.show()
