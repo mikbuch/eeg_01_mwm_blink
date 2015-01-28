@@ -45,7 +45,6 @@ int main()
             i++;
             if(j<2){
                 if((stream_output = fopen(file_output, "a"))!=NULL){
-//                     printf("%s\n",my_string);
                     fprintf(stream_output, "%s", my_string); 
                 }
                 fclose(stream_output);
@@ -53,21 +52,16 @@ int main()
             else{
                 f1 = strtof (my_string, NULL);
                 input[j-2]= f1; 
-//                 printf("input[%d]: %f\n", j-2, f1);
             }
-//             printf("input[%d] = %f\n", j, input[j]);
             j++;
             if(j==5){
                 j=0;
-//                 printf("\n");
                 calc_out = fann_run(ann, input);
                 snprintf(calc_output,50,"%f",calc_out[0]);
-//                 printf("%s",calc_output);
                 if((stream_output = fopen(file_output, "a"))!=NULL){
                     fprintf(stream_output, "%s\n",calc_output); 
                 }
                 fclose(stream_output);
-//                 printf("is it blink or norma (%f,%f,%f) -> %f\n\n",input[0], input[1], input[2], calc_out[0]);
             }
     }   
 
